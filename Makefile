@@ -11,8 +11,8 @@ APP_NAME=Gotenberg-Paperless
 APP_VERSION=0.0.1
 APP_AUTHOR=DieKruecke
 APP_REPOSITORY=https://github.com/diekruecke/gotenberg-paperless.git
-DOCKER_REGISTRY=diekruecke
-DOCKER_REPOSITORY=gotenberg-paperless
+DOCKER_REGISTRY=docker.io
+DOCKER_REPOSITORY=diekruecke/gotenberg-paperless
 GOLANGCI_LINT_VERSION=v1.61.0 # See https://github.com/golangci/golangci-lint/releases.
 
 .PHONY: build
