@@ -5,7 +5,7 @@ linters-settings:
       - default
       - prefix(github.com/gotenberg/gotenberg/v8)
       # TODO: change namespace.
-      - prefix(github.com/diekruecke/gotenberg-paperless)
+      - prefix(github.com/gotenberg/gotenberg-template-repository)
     skip-generated: true
     custom-order: true
   # Until https://github.com/securego/gosec/issues/1187 is resolved.
