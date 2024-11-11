@@ -8,7 +8,7 @@ it: build build-tests ## Initialize the development environment
 GOLANG_VERSION=1.23
 GOTENBERG_VERSION=8.13.0
 APP_NAME=Gotenberg-Paperless
-APP_VERSION=snapshot
+APP_VERSION=0.0.1
 APP_AUTHOR=DieKruecke
 APP_REPOSITORY=https://github.com/diekruecke/gotenberg-paperless.git
 DOCKER_REGISTRY=diekruecke
