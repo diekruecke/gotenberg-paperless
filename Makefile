@@ -5,7 +5,7 @@ help: ## Show the help
 .PHONY: it
 it: build build-tests ## Initialize the development environment
 
-GOLANG_VERSION=1.23
+GOLANG_VERSION=1.23.0
 GOTENBERG_VERSION=8.13.0
 APP_NAME=Gotenberg-Paperless
 APP_VERSION=0.0.1
