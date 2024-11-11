@@ -5,14 +5,14 @@ help: ## Show the help
 .PHONY: it
 it: build build-tests ## Initialize the development environment
 
-GOLANG_VERSION=1.23.3
+GOLANG_VERSION=1.23
 GOTENBERG_VERSION=8.13.0
 APP_NAME=Gotenberg-Paperless
 APP_VERSION=0.0.1
 APP_AUTHOR=DieKruecke
 APP_REPOSITORY=https://github.com/diekruecke/gotenberg-paperless.git
-DOCKER_REGISTRY=ghcr.io
-DOCKER_REPOSITORY=diekruecke/gotenberg-paperless
+DOCKER_REGISTRY=diekruecke
+DOCKER_REPOSITORY=gotenberg-paperless
 GOLANGCI_LINT_VERSION=v1.61.0 # See https://github.com/golangci/golangci-lint/releases.
 
 .PHONY: build
@@ -60,5 +60,5 @@ tests-once: ## Run the tests once (prefer the "tests" command while developing)
 fmt: ## Format the code and "optimize" the dependencies
 	gofumpt -l -w .
 	# TODO: change github.com/gotenberg/gotenberg-template-repository to actual namespace.
-	gci write -s standard -s default -s "prefix(github.com/gotenberg/gotenberg/v8)" -s "prefix(github.com/gotenberg/gotenberg-template-repository)" --skip-generated --skip-vendor --custom-order .
+	gci write -s standard -s default -s "prefix(github.com/gotenberg/gotenberg/v8)" -s "prefix(github.com/diekruecke/gotenberg-paperless)" --skip-generated --skip-vendor --custom-order .
 	go mod tidy
