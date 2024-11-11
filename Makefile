@@ -7,12 +7,12 @@ it: build build-tests ## Initialize the development environment
 
 GOLANG_VERSION=1.23
 GOTENBERG_VERSION=8.13.0
-APP_NAME=app
+APP_NAME=Gotenberg-Paperless
 APP_VERSION=snapshot
-APP_AUTHOR=app-author
-APP_REPOSITORY=https://my.app.git
-DOCKER_REGISTRY=app
-DOCKER_REPOSITORY=gotenberg
+APP_AUTHOR=DieKruecke
+APP_REPOSITORY=https://github.com/diekruecke/gotenberg-paperless.git
+DOCKER_REGISTRY=diekruecke
+DOCKER_REPOSITORY=gotenberg-paperless
 GOLANGCI_LINT_VERSION=v1.61.0 # See https://github.com/golangci/golangci-lint/releases.
 
 .PHONY: build
