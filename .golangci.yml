@@ -1,0 +1,62 @@
+linters-settings:
+  gci:
+    sections:
+      - standard
+      - default
+      - prefix(github.com/gotenberg/gotenberg/v8)
+      # TODO: change namespace.
+      - prefix(github.com/gotenberg/gotenberg-template-repository)
+    skip-generated: true
+    custom-order: true
+  # Until https://github.com/securego/gosec/issues/1187 is resolved.
+  gosec:
+    excludes:
+      - G115
+
+linters:
+  disable-all: true
+  enable:
+    - asasalint
+    - asciicheck
+    - bidichk
+    - bodyclose
+    - decorder
+    - dogsled
+    - dupl
+    - dupword
+    - durationcheck
+    - copyloopvar
+    - errcheck
+    - errname
+    - exhaustive
+    - gci
+    - gofmt
+    - goimports
+    - gofumpt
+    - gosec
+    - gosimple
+    - govet
+    - ineffassign
+    - importas
+    - misspell
+    - prealloc
+    - promlinter
+    #- sloglint
+    - staticcheck
+    - tenv
+    - testableexamples
+    - tparallel
+    - typecheck
+    - unconvert
+    - unused
+    - wastedassign
+    - whitespace
+
+run:
+  timeout: 5m
+  issues-exit-code: 1
+  tests: false
+
+output:
+  print-issued-lines: true
+  print-linter-name: true
