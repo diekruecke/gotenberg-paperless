@@ -1,4 +1,4 @@
-module github.com/gotenberg/gotenberg-template-repository
+module github.com/diekruecke/gotenberg-paperless
 
 // TODO: change module name.
 
